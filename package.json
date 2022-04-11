@@ -1,0 +1,39 @@
+{
+  "name": "cypress_cucumber",
+  "version": "1.0.0",
+  "description": "Cypress with cucumber - Base project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasp402/cypress_cucumber.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jasp402",
+    "email": "jasp402@gmail.com",
+    "url": "http://www.jasp402.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasp402/cypress_cucumber/issues"
+  },
+  "homepage": "https://github.com/jasp402/cypress_cucumber#readme",
+  "dependencies": {
+    "cypress": "^9.5.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^1.19.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reporter-cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
